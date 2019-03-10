@@ -1,0 +1,11 @@
+{{ userLocationData | json }}
+
+<agm-map
+  [latitude]="userLocationData['latitude']"
+  [longitude]="userLocationData['longitude']"
+>
+  <agm-marker
+    [latitude]="userLocationData['latitude']"
+    [longitude]="userLocationData['longitude']"
+  ></agm-marker>
+</agm-map>
